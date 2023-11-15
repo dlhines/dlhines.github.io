@@ -4,6 +4,7 @@ body {
     background-image: url('https://dlhines.net/public/images/transparents/pexels-roberto-nickson-2559941.jpg');
     background-size: 100% 100%;
     font-family: "Asap Condensed", sans-serif;
+    overflow-y: hidden;
 }
 [role="main"] {
     align-items: center;
