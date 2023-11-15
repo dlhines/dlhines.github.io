@@ -4,7 +4,7 @@ body {
     background-image: url('https://dlhines.net/public/images/transparents/pexels-roberto-nickson-2559941.jpg');
     background-size: 100% 100%;
     font-family: "Asap Condensed", sans-serif;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 [role="main"] {
     align-items: center;
@@ -22,12 +22,14 @@ h1 {
     margin:0;
 }
 h2 {
-    font-size: 1.5rem;
-    margin:0;    
+    font-size: 2rem;
+    margin:0 0 25px 0;    
 }
 h3 {
-    font-size: 1.3rem;
-    margin:0;    
+    font-size: 1.5rem;
+    margin:0;
+    margin:0 0 25px 0;  
+
 }
 h1,
 h2,
@@ -44,5 +46,26 @@ ul li {
     padding: 15px;
 }
 a {
+    background-color: #EEEEEE;
+    border-radius: 50px;
     color: #222222;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+@media all and (max-width: 1366px) {}
+@media all and (max-width: 1280px) and (orientation: landscape) {}
+@media all and (max-width: 800px) {}
+@media all and (max-width: 430px) {
+    body {
+        background-size: cover; 
+        background-attachment: fixed;        
+    }
+    .logo {
+        width: 55%;
+    }
+    h1{ font-size: 4rem }
+    h2{ font-size: 2rem }
+    h3{ font-size: 1.5rem }
+
 }
