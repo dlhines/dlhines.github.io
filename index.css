@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 html {
-  height: 100vh;
+  background-image: url("https://dlhines.net/public/images/transparents/pexels-roberto-nickson-2559941.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-size: cover;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  height: 50vh;
+  width: 100lvw;
+  overflow: hidden;
 }
 
 body {
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 body a {
@@ -38,17 +49,14 @@ body .page {
 body #home .top,
 body #home .bottom {
   height: 50vh;
-  width: 100vw;
 }
 body #home .top {
-  position: relative;
+  display: flex;
 }
 body #home .top .logo {
+  align-self: flex-end;
+  display: inline-block;
   filter: drop-shadow(2px 2px 2px #000000);
-  position: absolute;
-  bottom: 0;
-  left: 41%;
-  width: 350px;
 }
 body #home .bottom h1 {
   font-size: 6rem;
@@ -56,12 +64,12 @@ body #home .bottom h1 {
 }
 body #home .bottom h2 {
   font-size: 2rem;
-  margin: 0 0 25px 0;
+  margin: 15px 0 0 0;
 }
 body #home .bottom h3 {
   font-size: 1.5rem;
   margin: 0;
-  margin: 0 0 25px 0;
+  margin: 15px 0 0 0;
 }
 body #home .bottom h1, body #home .bottom h2, body #home .bottom h3 {
   color: #EEEEEE;
@@ -87,13 +95,22 @@ body #about .col-5 {
 }
 
 @media all and (max-width: 430px) {
-  html {
-    height: 100svh;
-    width: 100svw;
+  body #home .top {
+    text-align: center;
   }
-  body {
-    height: 100svh;
-    width: 100svw;
+  body #home .top .logo {
+    width: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #home .bottom h1 {
+    font-size: 4rem !important;
+  }
+  body #home .bottom h2 {
+    font-size: 1.5rem !important;
+  }
+  body #home .bottom h3 {
+    font-size: 1.3rem !important;
   }
 }
 
