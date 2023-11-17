@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+body {
+    background-image: url('https://dlhines.net/public/images/transparents/pexels-roberto-nickson-2559941.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: "Asap Condensed", sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    scroll-behavior: smooth;
+    a {
+        background: #EEEEEE;
+        border: 2px solid #999999;
+        border-radius: 50px;
+        box-shadow: 0 0 5px 2px #999999;
+        color: #222222;
+        font-size: 1.3rem;
+        padding: 15px;
+        text-decoration: none;
+        transition: border 1s;
+
+        &:hover {
+            border-color: #666666;
+        }
+    }
+    .page{
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        text-align: center;
+        padding:0;
+        margin:0;
+        scroll-behavior: smooth;
+    } 
+    #home {
+        .top,
+        .bottom {
+            height: 50vh;
+            width: 100vw;
+        }
+        .top {
+            position: relative;
+
+            .logo {
+                filter:drop-shadow(2px 2px 2px #000000);
+                position: absolute;
+                bottom: 0;
+                left: 41%;
+                width: 350px;
+            }            
+        }
+        .bottom {
+            h1 {
+                font-size: 6rem;
+                margin:0;
+            }
+            h2 {
+                font-size: 2rem;
+                margin:0 0 25px 0;    
+            }
+            h3 {
+                font-size: 1.5rem;
+                margin:0;
+                margin:0 0 25px 0;  
+            
+            }
+            h1,h2,h3 {
+                color: #EEEEEE;
+                filter:drop-shadow(2px 2px 2px #000000);
+            }
+            ul {
+                margin: 0;
+                margin-top: 50px;
+                padding: 0;
+
+                li {
+                    display: inline;
+                    padding: 15px;
+                }                       
+            }                 
+        }   
+    }
+}
+
+@media all and (max-width: 1366px) {}
+@media all and (max-width: 1280px) and (orientation: landscape) {}
+@media all and (max-width: 800px) {}
+@media all and (max-width: 430px) {
+    body {
+        background-size: cover; 
+        background-attachment: fixed;        
+    }
+    h1{ font-size: 4rem }
+    h2{ font-size: 1.5rem }
+    h3{ font-size: 1.1rem }
+    ul li {
+        display: block;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    #home .top .logo {
+        left: 26.5%;
+    }    
+}

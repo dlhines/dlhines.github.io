@@ -6,18 +6,31 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <div role="main">
-            <div>
-                <img class="logo" src="https://dlhines.net/public/images/icon/dlh-white.svg" />
-                <h1>dlhines.net</h1>
-                <h2>Development &#8226; Design &#8226; Optimization</h2>
-                <h3>Website/WebApps, Mobile, and Desktop Systems</h3>
-                <ul>
-                    <li><a href="https://dlhines.net" title="dlhines.net">Website</a></li>
-                    <li><a href="https://github.io/dlhines.net" title="dlhines.net">Github Projects</a></li>
-                </ul>
+        <main>
+            <div class="page" id="home">
+                <div>
+                    <div class="top animate__animated animate__fadeInDown">
+                        <img class="logo" src="https://dlhines.net/public/images/icon/dlh-white.svg" />
+                    </div>
+                    <div class="bottom animate__animated animate__fadeInUp">
+                        <h1>dlhines.net</h1>
+                        <h2>Development &#8226; Design &#8226; Optimization</h2>
+                        <h3>Website/WebApps, Mobile, and Desktop Systems</h3>
+                        <ul>
+                            <li><a target="_blank" href="https://dlhines.net" title="dlhines.net">Website</a></li>
+                            <li><a target="_blank" href="https://github.com/dlhines" title="dlhines.net">Github Projects</a></li>
+                            <li><a class="internal" href="#about" data-source="hello" title="dlhines.net">About</a></li>                    
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+                <div class="page" id="about">
+                    <div>
+                        <a class="internal" href="#home">Home</a>
+                    </div>
+                </div>
+            </div>            
+        </main>
         <footer>
             <script src="index.js"></script>
         </footer>
