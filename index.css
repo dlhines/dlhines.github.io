@@ -49,6 +49,7 @@ body .page {
 body #home .top,
 body #home .bottom {
   height: 50vh;
+  width: 100vw;
 }
 body #home .top {
   display: flex;
@@ -57,6 +58,8 @@ body #home .top .logo {
   align-self: flex-end;
   display: inline-block;
   filter: drop-shadow(2px 2px 2px #000000);
+  margin-left: auto;
+  margin-right: auto;
 }
 body #home .bottom h1 {
   font-size: 6rem;
@@ -84,14 +87,21 @@ body #home .bottom ul li {
   display: inline;
   padding: 15px;
 }
-body #about .col-5 {
+body #about .col-1 {
   background: #EEEEEE;
   border: 2px solid #999999;
   border-radius: 15px;
   box-shadow: 0 0 5px 2px #999999;
-  max-width: 50vh;
+  max-width: 75vh;
+  min-height: 55vh;
   padding: 15px;
   text-align: left;
+}
+body #about .col-1 .content {
+  overflow-y: scroll;
+}
+body #about .col-1 .content p {
+  line-height: 22pt;
 }
 
 @media all and (max-width: 430px) {
@@ -100,11 +110,9 @@ body #about .col-5 {
   }
   body #home .top .logo {
     width: 25vh;
-    margin-left: auto;
-    margin-right: auto;
   }
   body #home .bottom h1 {
-    font-size: 4rem !important;
+    font-size: 3.25rem !important;
   }
   body #home .bottom h2 {
     font-size: 1.5rem !important;
