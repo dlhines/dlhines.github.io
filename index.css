@@ -103,6 +103,9 @@ body #about .col-1 .content {
 body #about .col-1 .content p {
   line-height: 22pt;
 }
+body footer {
+  background-color: green;
+}
 
 @media all and (max-width: 430px) {
   body #home .top {
