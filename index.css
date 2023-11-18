@@ -104,7 +104,13 @@ body #about .col-1 .content p {
   line-height: 22pt;
 }
 body footer {
-  background-color: green;
+  bottom: 0;
+  color: #EEEEEE;
+  font-size: 1rem;
+  padding: 8px;
+  position: absolute;
+  width: 100vw;
+  text-align: center;
 }
 
 @media all and (max-width: 430px) {
