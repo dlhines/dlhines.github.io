@@ -199,11 +199,12 @@ body footer {
     line-height: 22pt;
   }
   body footer {
+    background-color: #666666;
     bottom: 0;
     color: #EEEEEE;
     font-size: 1rem;
     padding: 8px;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     text-align: center;
   }
