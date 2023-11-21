@@ -1,24 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+html,
+body {
+  position: fixed;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 html {
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-size: cover;
-  margin: 0;
-  padding: 0;
-  height: 50vh;
-  width: 100lvw;
-  overflow: hidden;
 }
 
 body {
   font-family: "Asap Condensed", sans-serif;
   font-size: 1.3rem;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
 }
 body a {
   background: #EEEEEE;
@@ -43,7 +42,6 @@ body .page {
   text-align: center;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }
 body #home .top,
 body #home .bottom {
@@ -112,12 +110,114 @@ body footer {
   text-align: center;
 }
 
+@media all and (max-width: 1366px) {
+  body {
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 1.3rem;
+  }
+  body a {
+    background: #EEEEEE;
+    border: 2px solid #999999;
+    border-radius: 50px;
+    box-shadow: 0 0 5px 2px #999999;
+    color: #222222;
+    font-size: 1.3rem;
+    padding: 15px;
+    text-decoration: none;
+    transition: border 1s;
+  }
+  body a:hover {
+    border-color: #666666;
+  }
+  body .page {
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  body #home .top,
+  body #home .bottom {
+    height: 50vh;
+    width: 100vw;
+  }
+  body #home .top {
+    display: flex;
+  }
+  body #home .top .logo {
+    align-self: flex-end;
+    display: inline-block;
+    filter: drop-shadow(2px 2px 2px #000000);
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  body #home .bottom h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  body #home .bottom h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 0 0;
+  }
+  body #home .bottom h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    margin: 15px 0 0 0;
+  }
+  body #home .bottom h1, body #home .bottom h2, body #home .bottom h3 {
+    color: #EEEEEE;
+    filter: drop-shadow(2px 2px 2px #000000);
+  }
+  body #home .bottom ul {
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+  }
+  body #home .bottom ul li {
+    display: inline;
+    padding: 15px;
+  }
+  body #about .col-1 {
+    background: #EEEEEE;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px #999999;
+    margin: 0px 15px;
+    max-width: 75vh;
+    min-height: 55vh;
+    padding: 15px;
+    text-align: left;
+  }
+  body #about .col-1 .content {
+    overflow-y: scroll;
+  }
+  body #about .col-1 .content p {
+    line-height: 22pt;
+  }
+  body footer {
+    bottom: 0;
+    color: #EEEEEE;
+    font-size: 1rem;
+    padding: 8px;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+  }
+}
 @media all and (max-width: 430px) {
   body #home .top {
+    height: 35vh;
     text-align: center;
   }
   body #home .top .logo {
     width: 25vh;
+  }
+  body #home .bottom {
+    height: 65vh;
   }
   body #home .bottom h1 {
     font-size: 3.25rem !important;
@@ -127,6 +227,14 @@ body footer {
   }
   body #home .bottom h3 {
     font-size: 1.3rem !important;
+  }
+  body #home .bottom ul li {
+    display: block;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  body #about .col-1 {
+    margin: 0px 15px;
   }
 }
 
