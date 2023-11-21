@@ -90,123 +90,41 @@ body #about .col-1 {
   border-radius: 15px;
   box-shadow: 0 0 5px 2px #999999;
   max-width: 75vh;
-  min-height: 55vh;
+  max-height: 55vh;
   padding: 15px;
   text-align: left;
 }
 body #about .col-1 .content {
-  overflow-y: scroll;
+  max-height: 55vh;
+  overflow-y: scroll !important;
 }
 body #about .col-1 .content p {
   line-height: 22pt;
 }
 body footer {
+  background-color: #666666;
   bottom: 0;
   color: #EEEEEE;
   font-size: 1rem;
   padding: 8px;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   text-align: center;
 }
+body footer .copyright a {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: #EEEEEE;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+}
 
 @media all and (max-width: 1366px) {
-  body {
-    font-family: "Asap Condensed", sans-serif;
-    font-size: 1.3rem;
-  }
-  body a {
-    background: #EEEEEE;
-    border: 2px solid #999999;
-    border-radius: 50px;
-    box-shadow: 0 0 5px 2px #999999;
-    color: #222222;
-    font-size: 1.3rem;
-    padding: 15px;
-    text-decoration: none;
-    transition: border 1s;
-  }
-  body a:hover {
-    border-color: #666666;
-  }
-  body .page {
-    align-items: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-  body #home .top,
-  body #home .bottom {
-    height: 50vh;
-    width: 100vw;
-  }
-  body #home .top {
-    display: flex;
-  }
   body #home .top .logo {
-    align-self: flex-end;
-    display: inline-block;
-    filter: drop-shadow(2px 2px 2px #000000);
-    margin-left: auto;
-    margin-right: auto;
     width: 25%;
-  }
-  body #home .bottom h1 {
-    font-size: 4rem;
-    margin: 0;
-  }
-  body #home .bottom h2 {
-    font-size: 1.5rem;
-    margin: 15px 0 0 0;
-  }
-  body #home .bottom h3 {
-    font-size: 1.2rem;
-    margin: 0;
-    margin: 15px 0 0 0;
-  }
-  body #home .bottom h1, body #home .bottom h2, body #home .bottom h3 {
-    color: #EEEEEE;
-    filter: drop-shadow(2px 2px 2px #000000);
-  }
-  body #home .bottom ul {
-    margin: 0;
-    margin-top: 50px;
-    padding: 0;
-  }
-  body #home .bottom ul li {
-    display: inline;
-    padding: 15px;
-  }
-  body #about .col-1 {
-    background: #EEEEEE;
-    border: 2px solid #999999;
-    border-radius: 15px;
-    box-shadow: 0 0 5px 2px #999999;
-    margin: 0px 15px;
-    max-width: 75vh;
-    min-height: 55vh;
-    padding: 15px;
-    text-align: left;
-  }
-  body #about .col-1 .content {
-    overflow-y: scroll;
-  }
-  body #about .col-1 .content p {
-    line-height: 22pt;
-  }
-  body footer {
-    background-color: #666666;
-    bottom: 0;
-    color: #EEEEEE;
-    font-size: 1rem;
-    padding: 8px;
-    position: fixed;
-    width: 100vw;
-    text-align: center;
   }
 }
 @media all and (max-width: 430px) {
